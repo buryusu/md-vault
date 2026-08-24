@@ -1,0 +1,37 @@
+{
+  "name": "md-vault",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && prisma db push --accept-data-loss && next build",
+    "start": "next start",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@auth/prisma-adapter": "^2.7.4",
+    "@prisma/client": "^5.22.0",
+    "@stripe/stripe-js": "^4.9.0",
+    "next": "^15.4.7",
+    "next-auth": "^4.24.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "rehype-highlight": "^7.0.1",
+    "remark-gfm": "^4.0.0",
+    "stripe": "^17.5.0",
+    "gray-matter": "^4.0.3",
+    "slugify": "^1.6.6",
+    "formidable": "^3.5.2",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@types/formidable": "^3.4.5",
+    "@types/fs-extra": "^11.0.4",
+    "prisma": "^5.22.0",
+    "typescript": "^5.7.3"
+  }
+}
